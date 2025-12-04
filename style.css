@@ -1,7 +1,43 @@
-h1, h2, h3 {
-    color: blue;
+/* vsechny barvy od začátku ukládat do proměnných (to není třída) */
+html {
+    --white: #ffffff;
+    --black: #000000;
+    --gray-light: #f9f9f9;
+    --gray-dark: #f80000;
+    --blue: #1900ff;
 }
+
+h1,
+h2,
+h3 {
+    color: var(--blue);
+}
+
 p {
     font-size: 16px;
     color: green;
+}
+
+.content-centered {
+    text-align: center;
+}
+
+.container-narrow {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.bg-dark {
+    background-color: var(--gray-dark);
+    color: #fff;
+}
+
+.bg-light {
+    background-color: #f9f9f9;
+    color: #000;
 }
